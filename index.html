@@ -20,9 +20,9 @@
 
     /* --- ENCABEZADO (Hero) --- */
     header {
-  background: 
-    url('Proyecto nuevo.png') center 20% no-repeat, 
-    url('https://images.unsplash.com/photo-1581091870622-4c8f0917f3d7?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      background: 
+        url('Proyecto nuevo.png') center 20% no-repeat, 
+        url('https://images.unsplash.com/photo-1581091870622-4c8f0917f3d7?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
       background-size: 900px, cover;
       background-blend-mode: overlay;
       height: 100vh;
@@ -50,15 +50,24 @@
       z-index: 1;
     }
 
+    .header-content {
+      margin-top: -40px;
+      position: relative;
+      z-index: 2;
+    }
+
     header h1 {
       font-size: 3.5rem;
       max-width: 800px;
+      margin: 0 auto;
     }
 
     header p {
       margin-top: 20px;
       font-size: 1.3rem;
       max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Botón de llamado a la acción */
@@ -152,122 +161,7 @@
       font-size: 2rem;
       color: #006400;
     }
+
     /* Testimonios */
     .testimonials {
-      background-color: #f1f8f4;
-      padding: 60px 20px;
-      text-align: center;
-    }
 
-    .testimonial {
-      max-width: 600px;
-      margin: 20px auto;
-      font-style: italic;
-    }
-
-    .testimonial strong {
-      display: block;
-      margin-top: 10px;
-      font-weight: 600;
-      color: #333;
-    }
-
-    /* Llamado a la acción (final) */
-    .cta {
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    /* Footer (pie de página) */
-    footer {
-      background-color: #222;
-      color: #aaa;
-      text-align: center;
-      padding: 20px 10px;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Sección principal con fondo e intro -->
-  <header>
-    margin-top: -40px;
-    <h1>Grow Your Business With Our Marketing Solutions</h1>
-    <p>We help companies thrive in the digital space with proven strategies and performance-based marketing.</p>
-    <button class="btn">Get Started</button>
-  </header>
-
-  <!-- Sección de logos de empresas -->
-  <section>
-    <h2>Trusted By</h2>
-    <div class="logos">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Pepsi_logo_2014.svg" alt="Logo 1">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logo 2">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_Tesla_Motors.svg" alt="Logo 3">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Meta_Platforms_Inc._logo.svg" alt="Logo 4">
-    </div>
-  </section>
-
-  <!-- Sección de servicios -->
-  <section>
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Performance Marketing</h3>
-        <p>Maximize ROI with campaigns that convert and scale efficiently.</p>
-      </div>
-      <div class="service">
-        <h3>Lead Generation</h3>
-        <p>Get high-quality leads through targeted digital strategies.</p>
-      </div>
-      <div class="service">
-        <h3>Brand Building</h3>
-        <p>Create a lasting impact and position your brand for success.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección de resultados (estadísticas) -->
-  <section>
-    <h2>Why Choose Us</h2>
-    <div class="results">
-      <div class="result-box">
-        <h4>+500%</h4>
-        <p>Average client ROI</p>
-      </div>
-      <div class="result-box">
-        <h4>24/7</h4>
-        <p>Dedicated support</p>
-      </div>
-      <div class="result-box">
-        <h4>10M+</h4>
-        <p>Ad spend managed</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonios de clientes -->
-  <section class="testimonials">
-    <h2>What Clients Say</h2>
-    <div class="testimonial">
-      "This team completely transformed our digital presence."
-      <strong>– Sarah M., eCommerce Founder</strong>
-    </div>
-    <div class="testimonial">
-      "Professional, effective, and always available to help."
-      <strong>– Mark L., SaaS CEO</strong>
-    </div>
-  </section>
-
-  <!-- Llamado a la acción final -->
-  <section class="cta">
-    <h2>Ready to Scale Your Business?</h2>
-    <button class="btn">Schedule a Call</button>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 MarketingOnBoard. All rights reserved.</p>
-  </footer>
-</body>
-</html>
