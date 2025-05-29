@@ -167,3 +167,54 @@ footer {
   text-align: center;
   padding: 20px 10px;
 }
+/* BLOQUE 3: OUR TEAM */
+.team {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 30px;
+  max-width: 350px;
+  text-align: left;
+}
+
+.team-member h3 {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.team-member .role {
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.team-member blockquote {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.team-member p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
