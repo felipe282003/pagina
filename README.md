@@ -1,2 +1,0 @@
-# pagina
-mi pagina
