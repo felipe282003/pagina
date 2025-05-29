@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MarketingOnBoard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+      color: #222;
+    }
+    header,
+    footer {
+      background: linear-gradient(90deg, #000428, #004e92);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      color: #004e92;
+      margin-bottom: 40px;
+    }
+    .team,
+    .projects,
+    .reviews,
+    .clients {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      padding: 30px 20px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    img.logo {
+      max-width: 200px;
+    }
+    img.brand {
+      max-width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .illustration {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      display: block;
+    }
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+    .service-img {
+      width: 100%;
+      max-width: 500px;
+      margin: 10px auto;
+      display: block;
+      border-radius: 8px;
+    }
+    .certification {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .certification img {
+      width: 160px;
+      margin-top: 10px;
+    }
+    .client-logo {
+      width: 120px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Proyecto nuevo.png" alt="MarketingOnBoard Logo" class="logo" />
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#projects">Projects</a>
+      <a href="#reviews">Reviews</a>
+      <a href="services.html" target="_blank">Services</a>
+      <a href="legal.html" target="_blank">Legal Notice</a>
+      <a href="privacy.html" target="_blank">Privacy Policy</a>
+      <a href="cookies.html" target="_blank">Cookies</a>
+    </nav>
+  </header>
+
+  <img src="https://cdn.pixabay.com/photo/2018/03/10/12/00/digital-marketing-3216079_960_720.jpg" class="illustration" alt="Marketing Illustration">
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <h3>Website Creation</h3>
+    <p>Creating a website is both a human and technological adventure. Through our creativity, we unlock the unlimited potential of Editor X or Wordpress websites.</p>
+    <p>We offer tailor-made web services for businesses of all sizes, delivering unique solutions that suit your current and evolving needs.</p>
+    <img src="https://cdn.pixabay.com/photo/2015/01/09/11/11/office-594132_960_720.jpg" class="service-img" alt="Website Creation">
+
+    <h3>Web Design</h3>
+    <p>We are a web development company specializing in creating professional and attractive websites. Our commitment is to deliver unique designs that match each client’s identity.</p>
+    <img src="https://cdn.pixabay.com/photo/2018/01/17/07/15/laptop-3087585_960_720.jpg" class="service-img" alt="Web Design">
+
+    <h3>SEO</h3>
+    <p>We provide natural search engine optimization services to help you generate high-quality traffic to your site. We deliver effective solutions to increase your online visibility on Google and social platforms.</p>
+    <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/seo-1837067_960_720.jpg" class="service-img" alt="SEO Services">
+
+    <div class="certification">
+      <h3>Certified by Google Ads Expert</h3>
+      <p>Our team is officially certified by Google Ads Expert, demonstrating our ability to manage successful and compliant advertising campaigns across Google’s platforms.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Google_Ads_logo.svg" alt="Google Ads Certification">
+    </div>
+  </section>
+
+  <section class="section" id="team">
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="card">
+        <h3>Amanda Carter</h3>
+        <p>Chief Strategy Officer</p>
+      </div>
+      <div class="card">
+        <h3>Leo Martinez</h3>
+        <p>Creative Director</p>
+      </div>
+      <div class="card">
+        <h3>Nina Bergstrom</h3>
+        <p>Client Success Manager</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Projects with Top Brands</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="brand" />
+        <p>Developed high-converting landing pages for Netflix’s promo campaigns.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="brand" />
+        <p>Executed a micro-influencer campaign for Apple Watch series 8.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="brand" />
+        <p>Optimized product page content across multiple Amazon categories.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="clients">
+    <h2>Trusted by Global Brands</h2>
+    <div class="clients">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="client-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Meta_Platforms_Inc._logo.svg" alt="Meta" class="client-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Spotify_Logo_RGB_Green.png" alt="Spotify" class="client-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="client-logo">
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <h2>Client Reviews</h2>
+    <div class="reviews">
+      <div class="card">
+        <p><strong>"MarketingOnBoard turned our stagnant campaign into a lead-generating machine!"</strong></p>
+        <p>— Jessica M., eCommerce Manager</p>
+      </div>
+      <div class="card">
+        <p><strong>"Their strategic vision and execution are unmatched. We saw a 300% ROI in 3 months."</strong></p>
+        <p>— Carl W., Brand Director</p>
+      </div>
+      <div class="card">
+        <p><strong>"We finally feel like someone understands our market and speaks our language."</strong></p>
+        <p>— Lucy T., Startup Founder</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MarketingOnBoard. All rights reserved.</p>
+    <p><strong>Address:</strong> 158 Thomas St, Ketchikan, Alaska, 99901 | <strong>Phone:</strong> [your phone number here]</p>
+  </footer>
+</body>
+</html>
