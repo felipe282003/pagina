@@ -2,166 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MarketingOnBoard</title>
-
-  <!-- Fuente personalizada desde Google Fonts -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <img src="Proyecto nuevo.png" alt="MarketingOnBoard Logo" class="logo" />
+      <h1>Grow Your Business With Our Marketing Solutions</h1>
+      <p>Helping American businesses succeed online with data-driven strategies and world-class execution.</p>
+      <button class="btn-primary">Get Started</button>
+    </div>
+  </header>
 
-  <!-- Estilos CSS dentro del archivo -->
-  <style>
-    /* --- ESTILOS GENERALES --- */
-    body {
-      margin: 0;
-      font-family: 'Outfit', sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-    }
+  <!-- Trusted Brands -->
+  <section class="trusted">
+    <h2>Trusted by Leading Brands</h2>
+    <div class="brands">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png" alt="Google">
+    </div>
+  </section>
 
-    /* --- ENCABEZADO (Hero) --- */
-    header {
-      background: 
-        url('Proyecto nuevo.png') center 20% no-repeat, 
-        url('https://images.unsplash.com/photo-1581091870622-4c8f0917f3d7?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-      background-size: 900px, cover;
-      background-blend-mode: overlay;
-      height: 100vh;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      padding: 0 20px;
-    }
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Performance Marketing</h3>
+        <p>ROI-focused ad campaigns that scale efficiently across platforms.</p>
+      </div>
+      <div class="card">
+        <h3>Lead Generation</h3>
+        <p>Generate quality leads with precision targeting and funnel optimization.</p>
+      </div>
+      <div class="card">
+        <h3>Consulting</h3>
+        <p>Customized marketing audits and strategic business consulting.</p>
+      </div>
+    </div>
+  </section>
 
-    /* Capa oscura encima del fondo para mejor lectura */
-    header::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-color: rgba(0, 0, 0, 0.6);
-    }
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial-box">
+      <blockquote>
+        “MarketingOnBoard helped us 4x our ad ROI in just 3 months. Highly recommended!”
+        <span>– Emma R., eCommerce Owner</span>
+      </blockquote>
+    </div>
+    <div class="testimonial-box">
+      <blockquote>
+        “We’ve worked with agencies before, but this team actually delivered results.”
+        <span>– Jason K., Startup Founder</span>
+      </blockquote>
+    </div>
+  </section>
 
-    /* Asegura que el texto esté por encima de la capa oscura */
-    header > * {
-      position: relative;
-      z-index: 1;
-    }
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Ready to Grow?</h2>
+    <button class="btn-primary">Book a Free Strategy Call</button>
+  </section>
 
-    .header-content {
-      margin-top: -40px;
-      position: relative;
-      z-index: 2;
-    }
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MarketingOnBoard. All rights reserved.</p>
+  </footer>
 
-    header h1 {
-      font-size: 3.5rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    header p {
-      margin-top: 20px;
-      font-size: 1.3rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Botón de llamado a la acción */
-    .btn {
-      margin-top: 30px;
-      background-color: #28a745;
-      color: white;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 50px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #218838;
-    }
-
-    /* Estilo base para secciones */
-    section {
-      max-width: 1200px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
-
-    section h2 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 40px;
-      color: #28a745;
-    }
-
-    /* Logos de empresas confiables */
-    .logos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-    }
-
-    .logos img {
-      max-height: 60px;
-      filter: grayscale(100%);
-      opacity: 0.7;
-      transition: all 0.3s ease;
-    }
-
-    .logos img:hover {
-      filter: none;
-      opacity: 1;
-    }
-
-    /* Cuadros de servicios */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    .service {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-
-    .service h3 {
-      color: #28a745;
-      margin-bottom: 15px;
-    }
-
-    /* Cuadros de resultados */
-    .results {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .result-box {
-      background: #e8f5e9;
-      padding: 30px;
-      border-radius: 15px;
-      width: 250px;
-    }
-
-    .result-box h4 {
-      font-size: 2rem;
-      color: #006400;
-    }
-
-    /* Testimonios */
-    .testimonials {
-
+</body>
+</html>
